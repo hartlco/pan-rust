@@ -1,0 +1,19 @@
+[package]
+name = "request"
+version = "0.1.0"
+authors = ["Martin Hartl <martin.hartl@onefootball.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+rocket = "0.4.4"
+rocket_contrib = "0.4.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.50"
+base64 = "0.12.0"
+serde_urlencoded = "0.6"
+chrono = "0.4.11"
+rocket-multipart-form-data = "0.8.1"
+
